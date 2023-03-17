@@ -1,34 +1,38 @@
-#ChatGPT: Assistente de conversação baseado em inteligência artificial
+# ChatGPT_VOZ
 
-ChatGPT é um assistente de conversação baseado na arquitetura GPT-4 da OpenAI que permite interagir com o modelo através de uma interface gráfica amigável e intuitiva. O projeto é desenvolvido em Python e utiliza o Tkinter para criar a interface do usuário.
+ChatGPT_VOZ é um assistente conversacional simples e amigável, baseado no GPT-3 da OpenAI. Desenvolvido em Python, este projeto utiliza o Tkinter para criar uma interface gráfica de usuário intuitiva.
 
-##Recursos
+## Recursos
 
-Conversação com o modelo GPT-3 da OpenAI em tempo real (existe um pequeno delay no processamento de audio)
-Interface gráfica fácil de usar com suporte a entrada de texto e voz
-Reconhecimento de fala e síntese de voz usando gTTS e SpeechRecognition
-Controle de volume e velocidade da voz
-Salvar conversas em arquivo de texto
+- Interface gráfica amigável para interação
+- Suporte para entrada de texto e voz
+- Texto para voz usando gTTS (Google Text-to-Speech)
+- Reconhecimento de voz usando a API do Google
+- Configuração personalizável de volume e velocidade da fala
 
-##Tecnologias utilizadas
+## Instalação
 
-Python
-Tkinter
-OpenAI GPT-4
-gTTS
-SpeechRecognition
-Pygame
-Pynput
-Instalação e configuração
-Clone este repositório para sua máquina local.
+1. Clone este repositório:
+git clone https://github.com/seu_usuario/ChatGPT_VOZ.git
 
-##Instale as dependências necessárias usando o comando:
-
+2. Instale as dependências:
+```python
 pip install -r requirements.txt
+```
 
-##Insira sua chave de API da OpenAI no arquivo credentials.py.
+3. Adicione sua chave da API OpenAI em `credentials.py`:
+```python
+API_KEY = "sua_chave_da_api_aqui"
+```
+4. Execute o programa:
+```python
+python chatgpt.py
+```
 
-##Execute o arquivo principal chatgpt.py para iniciar o programa.
+# Uso
+1. Digite sua mensagem ou Aperte o botão "falar" na interface do aplicativo.
+2. A resposta gerada pelo ChatGPT será exibida na tela e lida em voz alta.
+3. Salve a conversa no arquivo 'conversation.txt' clicando no botão "Salvar conversa".
 
-##Contribuições
-Sinta-se à vontade para contribuir com este projeto, abrindo issues ou enviando pull requests.
+# Licença
+Este projeto está licenciado sob a licença MIT.
